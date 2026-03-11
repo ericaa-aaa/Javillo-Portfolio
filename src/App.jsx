@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="animated-bg text-pink-900 scroll-smooth font-serif">
+    <div className="animated-bg text-pink-900 scroll-smooth font-emilys">
 
     <nav className="fixed w-full backdrop-blur-md bg-white/60 border-b border-pink-200 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">

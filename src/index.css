@@ -84,14 +84,6 @@ animation: gradientMove 15s ease infinite;
 100%{background-position:0% 50%;}
 }
 
-@font-face {
-    font-family: "Viaoda Libre", "sans-serif";
-    src: url("./assets/fonts/ViaodaLibre-Regular.ttf")
-    format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
 .navBtn{
 @apply hover:text-pink-600 transition font-medium;
 }
