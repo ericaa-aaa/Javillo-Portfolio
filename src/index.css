@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 
-
 body{
     scroll-behavior: smooth;
 }
@@ -83,6 +82,14 @@ animation: gradientMove 15s ease infinite;
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
+}
+
+@font-face {
+    font-family: "Viaoda Libre", "sans-serif";
+    src: url("./assets/fonts/ViaodaLibre-Regular.ttf")
+    format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 .navBtn{

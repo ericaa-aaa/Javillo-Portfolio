@@ -1,27 +1,18 @@
 import { useState, useEffect } from "react";
 import "./index.css";
-
 import logo from "./assets/images/Logo.png";
 import first from "./assets/images/1.png";
 import third from "./assets/images/3.png";
 import fourth from "./assets/images/4.png";
 import project1 from "./assets/images/project_capstone.mp4";
 import project2 from "./assets/images/project_bot.jpeg";
-
 import jane from "./assets/images/janee.png";
 import about1 from "./assets/images/about_1.jpg";
 import about2 from "./assets/images/about_2.jpg";
-
-import {
-  FaGithub,
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-  FaPinterest,
-} from "react-icons/fa";
-
+import { FaGithub, FaFacebook, FaInstagram, FaTwitter, FaPinterest,} from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CertificatesTimeline from "./components/CertificatesTimeline";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,9 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="animated-bg text-pink-900 scroll-smooth">
-
-{/* NAVBAR */}
+    <div className="animated-bg text-pink-900 scroll-smooth font-serif">
 
     <nav className="fixed w-full backdrop-blur-md bg-white/60 border-b border-pink-200 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -70,26 +59,26 @@ function App() {
         <section id="home" className="min-h-screen flex items-center pt-28 px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
-              <h2 className="text-5xl md:text-6xl font-bold text-pink-700">Hi, I'm Jane ✨</h2>
-              <p className="mt-6 text-lg text-pink-800"> Frontend Developer • Cybersecurity Enthusiast • UI/UX Designer</p>
+              <h2 className="text-5xl md:text-6xl font-bold font-serif text-pink-700">Hi, I'm Jane ✨</h2>
+              <p className="mt-6 text-lg text-pink-800 font-serif"> Frontend Developer • Cybersecurity Enthusiast • UI/UX Designer</p>
             <div className="flex gap-4 mt-8 flex-wrap">
               <a href="#projects" className="primaryBtn">View Projects</a>
-              <a href="CurriculumVitae.pdf" className="secondaryBtn">Download CV</a>
+              <a href="CurriculumVitae.pdf" download="javillo_cv.pdf" className="secondaryBtn">Download CV</a>
             </div>
             </div>
-              <div className="flex justify-center" data-aos="fade-left">
-                <img src={jane} className="w-[320px] drop-shadow-2xl animate-float"/>
+              <div className="w-full max-w-lg" data-aos="fade-left">
+                <img src={jane} className="w-full h-full object-cover drop-shadow-2xl animate-float"/>
               </div>
         </div>
       </section>
 
         <section>
           <div className="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-6">
-            <a href="https://github.com"><FaGithub className="social"/></a>
+            <a href="https://github.com/erica-aaa"><FaGithub className="social"/></a>
             <a href="https://facebook.com"><FaFacebook className="social"/></a>
-            <a href="https://instagram.com"><FaInstagram className="social"/></a>
-            <a href="https://twitter.com"><FaTwitter className="social"/></a>
-            <a href="https://pinterest.com"><FaPinterest className="social"/></a>
+            <a href="https://instagram.com/janejavs_"><FaInstagram className="social"/></a>
+            <a href="https://twitter.com/janejavs_"><FaTwitter className="social"/></a>
+            <a href="https://pinterest.com/janejavs_"><FaPinterest className="social"/></a>
           </div>
         </section>
 
@@ -106,51 +95,43 @@ function App() {
                   I am currently taking BS Information Technology major in Network Technology.
                   I am passionate about cybersecurity, cloud security, and UI/UX design.
                 </p>
-                  <h4 className="mt-6 font-semibold text-xl text-pink-700">Certifications</h4>
-                    <ul className="mt-3 space-y-2 text-pink-800">
-                      <li>• Cisco – Cybersecurity</li>
-                      <li>• AWS – Cloud Security</li>
-                      <li>• Qualys – Vulnerability Management</li>
-                    </ul>
+                <CertificatesTimeline />
               </div>
-
           </div>
-
           </section>
 
             <section id="skills" className="py-24 px-6">
               <div className="max-w-6xl mx-auto text-center">
               <h3 className="sectionTitle">Skills</h3>
+
                 <div className="grid md:grid-cols-3 gap-8 mt-12">
                   <div className="skillCard" data-aos="fade-up">
-                    <h4>Frontend</h4>
-                      <div className="flex flex-wrap gap-2 mt-3">
-                        <span className="skill">React</span>
-                        <span className="skill">JavaScript</span>
-                        <span className="skill">HTML</span>
-                        <span className="skill">CSS</span>
-                      </div>
+                    <h4 className="mb-4 font-semibold">Frontend</h4>
+                      <ul className="list-disc list-inside space-y-1 text-left mx-auto w-fit">
+                        <li className="skill">React</li>
+                        <li className="skill">JavaScript</li>
+                        <li className="skill">HTML</li>
+                        <li className="skill">CSS</li>
+                      </ul>
                   </div>
 
                   <div className="skillCard" data-aos="fade-up">
-                    <h4>Backend</h4>
-                      <div className="flex flex-wrap gap-2 mt-3">
-                        <span className="skill">Firebase</span>
-                        <span className="skill">MySQL</span>
-                      </div>
+                    <h4 className="mb-4 font-semibold">Backend</h4>
+                      <ul className="list-disc list-inside space-y-1 text-left mx-auto w-fit">
+                        <li className="skill">Firebase</li>
+                        <li className="skill">MySQL</li>
+                      </ul>
                   </div>
 
                   <div className="skillCard" data-aos="fade-up">
-                    <h4>Security</h4>
-                      <div className="flex flex-wrap gap-2 mt-3">
-                        <span className="skill">Network Defense</span>
-                        <span className="skill">Cybersecurity</span>
-                      </div>
+                    <h4 className="mb-4 font-semibold">Security</h4>
+                      <ul className="list-disc list-inside space-y-1 text-left mx-auto w-fit">
+                        <li className="skill">Network Defense</li>
+                        <li className="skill">Cybersecurity</li>
+                      </ul>
                   </div>
                 </div>
-
             </div>
-
             </section>
 
                 <section id="projects" className="py-24 px-6 bg-white/40 backdrop-blur-lg">
@@ -159,8 +140,7 @@ function App() {
                   <div className="grid md:grid-cols-3 gap-8 mt-12">
                       {[first, third, fourth].map((img, i) => (
                     <div key={i} className="projectCard group" data-aos="zoom-in">
-                      <img src={img} className="w-full h-64 object-cover rounded-xl group-hover:scale-110 transition duration-500"/>
-                    <div className="projectOverlay">Project {i + 1}</div>
+                      <img src={img} className="w-full h-64 object-cover rounded-xl group-hover:scale-110 hover:brightness-110 transition duration-500"/>
                     </div>))}
                   </div>
 
@@ -171,7 +151,7 @@ function App() {
                       </div>
                         <div className="grid gap-4">
                           <img src={project2} className="rounded-2xl shadow-lg"/>
-                            <iframe src={project1} className="rounded-2xl h-64"/>
+                            <iframe src={project1} className="rounded-2xl aspect-video"/>
                         </div>
                     </div>
                   </div>
