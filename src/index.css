@@ -85,7 +85,7 @@ animation: gradientMove 15s ease infinite;
 }
 
 .navBtn{
-@apply hover:text-pink-600 transition font-medium;
+@apply hover:text-pink-600 transition font-medium ;
 }
 
 .primaryBtn{
@@ -97,7 +97,7 @@ animation: gradientMove 15s ease infinite;
 }
 
 .sectionTitle{
-@apply text-4xl font-bold bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent;
+@apply text-4xl font-bold bg-linear-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent;
 }
 
 .skillCard{

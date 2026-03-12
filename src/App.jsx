@@ -30,12 +30,12 @@ function App() {
     <nav className="fixed w-full backdrop-blur-md bg-white/60 border-b border-pink-200 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center text-left gap-3">
           <img src={logo} className="w-12 rounded-full"/>
-          <h1 className="font-bold text-lg tracking-wide">Jane Javillo</h1>
+          <h1 className="font-bold text-xl md:text-xl tracking-wide">Jane Javillo</h1>
         </div>
 
-          <div className="hidden md:flex gap-8">
+          <div className="hidden md:flex gap-8 text-xl md:text-xl ">
             <a href="#home" className="navBtn">Home</a>
             <a href="#about" className="navBtn">About</a>
             <a href="#skills" className="navBtn">Skills</a>
@@ -58,15 +58,15 @@ function App() {
 
         <section id="home" className="min-h-screen flex items-center pt-28 px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div data-aos="fade-right">
-              <h2 className="text-5xl md:text-6xl font-bold font-serif text-pink-700">Hi, I'm Jane ✨</h2>
-              <p className="mt-6 text-lg text-pink-800 font-serif"> Frontend Developer • Cybersecurity Enthusiast • UI/UX Designer</p>
+            <div data-aos="fade-down-right">
+              <h2 className="text-4xl md:text-7xl font-bold font-serif text-pink-700">Hi, I'm Jane ✨</h2>
+              <p className="mt-6 text-lg md:text-4xl text-pink-800 font-serif"> Frontend Developer • Cybersecurity Enthusiast • UI/UX Designer</p>
             <div className="flex gap-4 mt-8 flex-wrap">
               <a href="#projects" className="primaryBtn">View Projects</a>
               <a href="CurriculumVitae.pdf" download="javillo_cv.pdf" className="secondaryBtn">Download CV</a>
             </div>
             </div>
-              <div className="w-full max-w-lg" data-aos="fade-left">
+              <div className="w-full max-w-lg" data-aos="fade-up-left">
                 <img src={jane} className="w-full h-full object-cover drop-shadow-2xl animate-float"/>
               </div>
         </div>
@@ -84,12 +84,12 @@ function App() {
 
           <section id="about" className="py-24 px-6 bg-white/40 backdrop-blur-lg">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div className="grid grid-cols-2 gap-6" data-aos="zoom-in">
-              <img src={about1} className="rounded-3xl shadow-xl hover:scale-105 transition"/>
-              <img src={about2} className="rounded-3xl shadow-xl hover:scale-105 transition"/>
+            <div className="grid grid-cols-2 gap-6" >
+              <img src={about1} data-aos="flip-left" className="rounded-3xl shadow-xl hover:scale-105 transition"/>
+              <img src={about2} data-aos="flip-right" className="rounded-3xl shadow-xl hover:scale-105 transition"/>
             </div>
 
-              <div data-aos="fade-up">
+              <div data-aos="zoom-in">
                 <h3 className="sectionTitle">About Me</h3>
                 <p className="mt-6 text-pink-800">
                   I am currently taking BS Information Technology major in Network Technology.
@@ -151,7 +151,7 @@ function App() {
                       </div>
                         <div className="grid gap-4">
                           <img src={project2} className="rounded-2xl shadow-lg"/>
-                            <iframe src={project1} className="rounded-2xl aspect-video"/>
+                            <iframe src={project1} className="rounded-2xl aspect-video "/>
                         </div>
                     </div>
                   </div>
