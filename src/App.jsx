@@ -89,8 +89,7 @@ function App() {
 
           <section id="about" className="py-24 px-6 bg-white/40 backdrop-blur-lg">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-
-            <div className="flex flex-row md:relative gap-1 md:gap-3 md:block w-full max-w-md md:h-125 mx-auto m-2 p-2 lg:p-3 lg:m-3">
+              <div className="flex flex-row md:relative gap-1 md:gap-3 md:block w-full max-w-md md:h-125 mx-auto m-2 p-2 lg:p-3 lg:m-3">
                   <img src={about2} data-aos="flip-left" className="w-1/2 md:absolute md:bottom-0 md:left-0 md:w-55 rounded-2xl shadow-lg"/>
                   <img src={about1} data-aos="flip-right" className="w-1/2 md:absolute md:top-0 md:right-0 md:w-55 rounded-2xl shadow-lg "/>
             </div>
@@ -119,7 +118,7 @@ function App() {
                </div>
 
                 <div className="grid md:grid-cols-3 gap-8 mt-12">
-                  <div className="skillCard" data-aos="fade-up">
+                  <div className="skillCard" data-aos="fade-left">
                     <h4 className="mb-4 font-semibold">Frontend</h4>
                       <ul className="list-disc list-inside space-y-1 text-left mx-auto w-fit">
                         <li className="skill">React</li>
@@ -129,7 +128,7 @@ function App() {
                       </ul>
                   </div>
 
-                  <div className="skillCard" data-aos="fade-up">
+                  <div className="skillCard" data-aos="zoom-in">
                     <h4 className="mb-4 font-semibold">Backend</h4>
                       <ul className="list-disc list-inside space-y-1 text-left mx-auto w-fit">
                         <li className="skill">Firebase</li>
@@ -137,7 +136,7 @@ function App() {
                       </ul>
                   </div>
 
-                  <div className="skillCard" data-aos="fade-up">
+                  <div className="skillCard" data-aos="fade-right">
                     <h4 className="mb-4 font-semibold">Security</h4>
                       <ul className="list-disc list-inside space-y-1 text-left mx-auto w-fit">
                         <li className="skill">Network Defense</li>
