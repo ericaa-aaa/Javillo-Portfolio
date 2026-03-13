@@ -18,6 +18,7 @@ import soft from "./assets/images/software.png";
 import pj from "./assets/images/pj.png";
 import email from "./assets/images/email.png";
 
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -89,13 +90,12 @@ function App() {
           <section id="about" className="py-24 px-6 bg-white/40 backdrop-blur-lg">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-            <div className="flex flex-row md:relative gap-1 md:gap-2 box-content md:block w-full max-w-md md:h-125 mx-auto m-2 p-2 lg:p-3 lg:m-3">
+            <div className="flex flex-row md:relative gap-1 md:gap-3 md:block w-full max-w-md md:h-125 mx-auto m-2 p-2 lg:p-3 lg:m-3">
                   <img src={about2} data-aos="flip-left" className="w-1/2 md:absolute md:bottom-0 md:left-0 md:w-55 rounded-2xl shadow-lg"/>
                   <img src={about1} data-aos="flip-right" className="w-1/2 md:absolute md:top-0 md:right-0 md:w-55 rounded-2xl shadow-lg "/>
             </div>
 
               <div data-aos="zoom-in">
-
                <div className="flex gap-3">
                  <img src={info} className="w-12 rounded-full"/>
                  <h3 className="sectionTitle">About Me</h3>

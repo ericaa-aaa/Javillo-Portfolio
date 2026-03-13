@@ -1,4 +1,5 @@
 import React from "react";
+import cert from "../assets/images/cert.png";
 
 const certificates = [
   {
@@ -30,8 +31,13 @@ const certificates = [
 function CertificatesTimeline() {
   return (
     <div className="mt-10">
-      <h4 className="text-2xl font-semibold text-pink-700 mb-6">Certifications 🎓</h4>
-      <ol className="relative border-l-2 border-pink-200">
+
+     <div className="flex gap-3 items-center">
+        <img src={cert} className="w-12 self-start"/>
+        <h4 className="text-2xl md:text-3xl font-semibold text-pink-700 mb-6">Certifications 🎓</h4>
+    </div>
+
+      <ol className="relative border-l-2 border-pink-200 m-5">
         {certificates.map((cert, index) => (
           <li key={index} className="mb-8 ml-6">
             <span className="absolute flex items-center justify-center w-6 h-6 bg-pink-200 rounded-full -left-3 ring-8 ring-white">
@@ -43,6 +49,7 @@ function CertificatesTimeline() {
           </li>
         ))}
       </ol>
+      
     </div>
   );
 }
