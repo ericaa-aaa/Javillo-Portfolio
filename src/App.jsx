@@ -13,6 +13,10 @@ import { FaGithub, FaFacebook, FaInstagram, FaTwitter, FaPinterest,} from "react
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CertificatesTimeline from "./components/CertificatesTimeline";
+import info from "./assets/images/info.png";
+import soft from "./assets/images/software.png";
+import pj from "./assets/images/pj.png";
+import email from "./assets/images/email.png";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -59,7 +63,7 @@ function App() {
         <section id="home" className="min-h-screen flex items-center pt-28 px-6">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-down-right">
-              <h2 className="text-4xl md:text-7xl font-bold font-serif text-pink-700">Hi, I'm Jane ✨</h2>
+              <h2 className="text-4xl md:text-7xl font-bold font-serif text-pink-700 animate-typing">Hi, I'm Jane ✨</h2>
               <p className="mt-6 text-lg md:text-4xl text-pink-800 font-serif"> Frontend Developer • Cybersecurity Enthusiast • UI/UX Designer</p>
             <div className="flex gap-4 mt-8 flex-wrap">
               <a href="#projects" className="primaryBtn">View Projects</a>
@@ -90,7 +94,12 @@ function App() {
             </div>
 
               <div data-aos="zoom-in">
-                <h3 className="sectionTitle">About Me</h3>
+
+               <div className="flex gap-3">
+                 <img src={info} className="w-12 rounded-full"/>
+                 <h3 className="sectionTitle">About Me</h3>
+               </div>
+
                 <p className="mt-6 text-pink-800">
                   I am currently taking BS Information Technology major in Network Technology.
                   I am passionate about cybersecurity, cloud security, and UI/UX design.
@@ -102,7 +111,11 @@ function App() {
 
             <section id="skills" className="py-24 px-6">
               <div className="max-w-6xl mx-auto text-center">
-              <h3 className="sectionTitle">Skills</h3>
+
+               <div className="flex gap-3 justify-center">
+                 <img src={soft} className="w-12 "/>
+                 <h3 className="sectionTitle">Skills</h3>
+               </div>
 
                 <div className="grid md:grid-cols-3 gap-8 mt-12">
                   <div className="skillCard" data-aos="fade-up">
@@ -136,7 +149,12 @@ function App() {
 
                 <section id="projects" className="py-24 px-6 bg-white/40 backdrop-blur-lg">
                   <div className="max-w-6xl mx-auto text-center">
-                    <h3 className="sectionTitle">Projects</h3>
+
+                   <div className="flex gap-3 justify-center">
+                     <img src={pj} className="w-12 "/>
+                     <h3 className="sectionTitle">Projects</h3>
+                   </div>
+
                   <div className="grid md:grid-cols-3 gap-8 mt-12">
                       {[first, third, fourth].map((img, i) => (
                     <div key={i} className="projectCard group" data-aos="zoom-in">
@@ -158,7 +176,12 @@ function App() {
                 </section>
 
                   <section id="contact" className="py-24 text-center px-6">
-                    <h3 className="sectionTitle">Contact</h3>
+
+                 <div className="flex gap-3 justify-center">
+                     <img src={email} className="w-12 "/>
+                   <h3 className="sectionTitle">Contact</h3>
+                 </div>
+
                     <p className="mt-6 text-pink-800">
                       Feel free to reach out for collaborations,
                       internships, or tech opportunities.
