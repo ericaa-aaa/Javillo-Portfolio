@@ -88,9 +88,10 @@ function App() {
 
           <section id="about" className="py-24 px-6 bg-white/40 backdrop-blur-lg">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div className="grid grid-cols-2 gap-6" >
-              <img src={about1} data-aos="flip-left" className="rounded-3xl shadow-xl hover:scale-105 transition"/>
-              <img src={about2} data-aos="flip-right" className="rounded-3xl shadow-xl hover:scale-105 transition"/>
+
+            <div className="flex flex-row md:relative gap-1 md:gap-2 box-content md:block w-full max-w-md md:h-125 mx-auto m-2 p-2 lg:p-3 lg:m-3">
+                  <img src={about2} data-aos="flip-left" className="w-1/2 md:absolute md:bottom-0 md:left-0 md:w-55 rounded-2xl shadow-lg"/>
+                  <img src={about1} data-aos="flip-right" className="w-1/2 md:absolute md:top-0 md:right-0 md:w-55 rounded-2xl shadow-lg "/>
             </div>
 
               <div data-aos="zoom-in">
@@ -188,11 +189,13 @@ function App() {
                     </p>
                       <a href="mailto:javilloericajande@gmail.com" className="primaryBtn mt-10 inline-block">Send Email ✨</a>
                   </section>
-                    <a href="#contact" className="fixed bottom-6 right-6 bg-pink-500 text-white px-6 py-3 rounded-full shadow-xl hover:scale-110 transition">💌</a>
+                    
 
                     <footer className="bg-white/60 backdrop-blur text-center py-6">
                       <p>© 2026 Jane Javillo • React + Tailwind</p>
                     </footer>
+
+                    <a href="#contact" className="fixed bottom-6 right-6 bg-pink-500 text-white px-6 py-3 rounded-full shadow-xl hover:scale-110 transition z-50">💌</a>
 
     </div>
   );
